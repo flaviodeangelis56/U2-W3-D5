@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html"
+          ><img
+            src="https://www.zarla.com/images/zarla-open-giochi-1x1-2400x2400-20210604-qcfyqm398j3r393gtbx6.png?crop=1:1,smart&width=250&dpr=2"
+            alt=""
+            style="height: 80px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active btn btn-warning" aria-current="page" href="homepage.html">Home Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form onsubmit="createFunction(event)">
+      <h3 class="mt-5 mb-3">Insert Name of Product <span id="obligatory">*obligatory</span></h3>
+      <input type="text" id="name" required />
+      <h3 class="my-3">Insert Description of Product <span id="obligatory">*obligatory</span></h3>
+      <input type="text" id="description" required />
+      <h3>Insert Brand of Product <span id="obligatory">*obligatory</span></h3>
+      <input type="text" id="brand" required />
+      <h3 class="my-3">Insert Image URL of Product <span id="obligatory">*obligatory</span></h3>
+      <input type="text" id="imageURL" required />
+      <h3 class="my-3">Insert Price of Product <span id="obligatory">*obligatory</span></h3>
+      <input type="text" id="price" required />
+      <br />
+      <button type="submit" class="btn btn-success mt-5 mx-3" id="create">Create New Product</button>
+      <button type="button" class="btn btn-danger mt-5 d-none" id="delete">Delete Product</button>
+      <button type="button" class="btn btn-danger mt-5" id="reset">Resete Form</button>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
