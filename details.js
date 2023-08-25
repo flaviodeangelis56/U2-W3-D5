@@ -12,6 +12,8 @@ window.onload = async () => {
     });
     const productObj = await resp.json();
     console.log(productObj);
+    const spinner = document.getElementById("spinner");
+    spinner.remove();
     const { name, description, brand, imageUrl, price } = productObj;
     const main = document.getElementById("main");
     const div = document.createElement("div");
@@ -21,7 +23,8 @@ window.onload = async () => {
 <p class="mb-3">
 ${description}
 </p>
-<h4 class="mb-3">${price}$</h4>`;
+<h4 class="mb-3">${price}$</h4>
+<a href="index.html?productId=${productObj._id}" class="btn btn-warning mb-5">edit product</a>`;
     main.appendChild(div);
   } catch (error) {
     console.log(error);

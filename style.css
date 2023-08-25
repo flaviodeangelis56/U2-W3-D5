@@ -1,9 +1,9 @@
 body {
-  background-color: black;
   text-align: center;
   color: rgb(214, 214, 214);
 }
-.detailImg {
+.detailImg,
+.homepageImg {
   width: 100%;
 }
 #obligatory {
@@ -12,4 +12,7 @@ body {
 #spinner {
   margin-inline: auto;
   margin-top: 20%;
+}
+.custom {
+  font-size: 500%;
 }

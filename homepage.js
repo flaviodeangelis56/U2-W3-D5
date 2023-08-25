@@ -19,7 +19,7 @@ window.onload = async () => {
       col.className = "col-md-4 my-5 ";
       col.innerHTML = `
       <div class="card" style="height: 400px">
-       <img src="${productObj.imageUrl}" class="card-img-top" alt="${productObj.name}" style="height: 200px"/>
+       <img src="${productObj.imageUrl}" class="card-img-top homepageImg" alt="${productObj.name}" style="height: 200px"/>
         <div class="card-body">
          <h5 class="card-title">${productObj.name}</h5>
          <p class="card-text">
